@@ -6,7 +6,7 @@ Edubasica is an Arduino shield designed to make easier the implementation of
 "Practicas con Arduino" projects.
 Practicas con Arduino eBook (spanish version) es free and downloable from 
 this web site:
-proacticasconarduino.com  
+practicasconarduino.com  
 and from iTunes for iPad version.
 
 Edubasica schematics are licensed under a Creative Commons Attribution 

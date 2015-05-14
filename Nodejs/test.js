@@ -357,7 +357,7 @@ function fullTest () {
       encenderLedRojo();
       linea();    
     break;
-   case 'potenciometroBasico':
+   case 'potenciometro':
       linea();   
       console.log('Iniciando solo la lectura del potenciometro...');    
       potenciometroBasico();
@@ -369,19 +369,19 @@ function fullTest () {
       potenciometroLeds();
       linea();    
     break;
-   case 'ldrBasico':
+   case 'ldr':
       linea();   
       console.log('Iniciando solo la lectura del LDR...');    
       ldrBasico();
       linea();    
     break;
-   case 'servoBasico':
+   case 'servo':
       linea();   
       console.log('Iniciando el servo y ajustando el bucle...');    
       servoBasico();
       linea();    
     break;
-   case 'motoresBasico':
+   case 'motores':
       linea();   
       console.log('Iniciando ambos motores y ajustando la secuencia...');    
       motoresBasico();
@@ -399,7 +399,7 @@ function fullTest () {
       motoresReversa();
       linea();    
     break;
-   case 'motorABasico':
+   case 'motorA':
       linea();   
       console.log('Iniciando el motorA y ajustando la secuencia...');    
       motorABasico();
@@ -417,7 +417,7 @@ function fullTest () {
       motorAReversa();
       linea();    
     break;
-   case 'motorBBasico':
+   case 'motorB':
       linea();   
       console.log('Iniciando el motorB y ajustando la secuencia...');    
       motorBBasico();
@@ -441,7 +441,7 @@ function fullTest () {
       pulsadorLeds();
       linea();    
     break;
-   case 'pulsadorBasico':
+   case 'pulsador':
       linea();   
       console.log('Iniciando solo la lectura del pulsador...');    
       pulsadorBasico();

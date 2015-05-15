@@ -17,6 +17,7 @@ _**Note:** English version is [here](https://github.com/UlisesGascon/edubasica/t
 > EduBasica es una tarjeta multipropósito con componentes electrónicos incluidos 
 > que puedes usar para fabricar un robot, controlar un sistema de poleas, activar barreras, 
 > comunicar dispositivos bluetooth, y todo lo que te puedas imaginar para realizar cientos de prácticas.
+> ***[practicasconarduino](http://practicasconarduino.com)***
 
 - [Sitio oficial](http://practicasconarduino.com)
 - [Esquemas y circuitos](https://github.com/jorgeroden/edubasica)
@@ -29,6 +30,7 @@ _**Note:** English version is [here](https://github.com/UlisesGascon/edubasica/t
 > Node.js es un entorno de programación en la capa del servidor (pero no limitándose a ello) basado 
 > en el lenguaje de programación ECMAScript, asíncrono, con I/O de datos en una arquitectura orientada 
 > a eventos y basado en el motor V8 de Google.
+> ***[Wikepedia](https://es.wikipedia.org)***
 
 - [Documentación](https://nodejs.org/documentation/) 
 - [Nodeschool](http://nodeschool.io/)
@@ -42,6 +44,7 @@ _**Note:** English version is [here](https://github.com/UlisesGascon/edubasica/t
 > developed at Bocoup. Johnny-Five programs can be written for Arduino (all models), Electric Imp, 
 > Beagle Bone, Intel Galileo & Edison, Linino One, Pinoccio, pcDuino3, Raspberry Pi, Spark Core, TI 
 > Launchpad and more!
+> ***[Johnny-five en Github](https://github.com/rwaldron/johnny-five)***
 
 - [Noticias](http://johnny-five.io/news/)
 - [API](http://johnny-five.io/api/)
@@ -54,7 +57,7 @@ _**Note:** English version is [here](https://github.com/UlisesGascon/edubasica/t
 
 Instalamos [nodejs](https://nodejs.org/). 
 
-Descargamos el repositorio en la carpeta deseada.
+Clonamos el repositorio en la carpeta deseada.
 
 	git clone https://github.com/UlisesGascon/edubasica.git
 
@@ -66,7 +69,7 @@ Instalamos J5.
 
 ## edubasica.js
 
-Este script es la base para desarrollar un proyecto con EduBasica, todas las variables del esquema electrónico estan definidas. 
+Este script es la base para desarrollar un proyecto con EduBasica, todas las variables del esquema electrónico están definidas. 
 
 **EduBasica PinOut**
 
@@ -124,22 +127,22 @@ board.on("ready", function() {
 
 ## test.js
 
-*test.js* nos permite hacer un test de toda la placa por completo o de funciones especificas. La manera de funcionar es a traves de la *consola de Nodejs*.
+*test.js* nos permite hacer un test de toda la placa por completo o de funciones especificas. La manera de funcionar es a través de la *consola de Nodejs*.
 
 En primer lugar debemos ejecutar el script.
 
 	node test.js (argumento)
 
-El argumento es opcional, al ejecutar el script sin argumento o con un argumento no valido por defecto se ejecuta la *función fullTest* que incluye *potenciometro, ldr, pulsador, motores y servo*.
+El argumento es opcional, al ejecutar el script sin argumento o con un argumento no valido por defecto se ejecuta la *función fullTest* que incluye *potenciómetro, ldr, pulsador, motores y servo*.
 
 Se puede definir que parte testear gracias a los argumentos, solo es necesario incluirlo durante la ejecución. 
 *Por ejemplo:*
 
 	node test.js potenciometroLeds
 
-En este ejemplo node ejecutaria la *función potenciometroLeds*, que enciende y apaga los leds en función del valor en el potenciometro.
+En este ejemplo node ejecutaría la *función potenciometroLeds*, que enciende y apaga los leds en función del valor en el potenciómetro.
 
-*Nota: Todos los scripts relacionados con motores y servos requieren de hardware adiccional (motores y servos), aun sin ellos se pueden ejecutar los scripts.*
+*Nota: Todos los scripts relacionados con motores y servos requieren de hardware adicional (motores y servos), aun sin ellos se pueden ejecutar los scripts.*
 
 *Importante: El interruptor junto al led VIN, activa y desactiva la corriente hacia los motores y el servo. Por favor, verifica que este apagado o encendido para las prácticas que los incluyen.*
 
@@ -148,7 +151,7 @@ En este ejemplo node ejecutaria la *función potenciometroLeds*, que enciende y 
 
 | Argumento | Función | Comportamiento |
 | --- | --- | --- |
-| (vacio) | fullTest (); | Test completo (pulsador, potenciometro, motores, servo...)  | 
+| (vacio) | fullTest (); | Test completo (pulsador, potenciómetro, motores, servo...)  | 
 | encenderLeds | encenderLeds(); | Encender todos los leds |
 | parpadearLeds | parpadearLeds(); | Parpadear todos los leds |
 | encenderLed1 | encenderLed1(); | Encender el Led1 (Verde) |
@@ -172,3 +175,5 @@ En este ejemplo node ejecutaria la *función potenciometroLeds*, que enciende y 
 | motorBReversa | motorBReversa(); | MotorB reversa sinfín |
 | pulsador | pulsadorBasico(); | Solo lectura del pulsador |
 | pulsadorLeds | pulsadorLeds(); | Lectura e interacción con Leds |
+
+***Imágenes de [practicasconarduino](http://practicasconarduino.com)***

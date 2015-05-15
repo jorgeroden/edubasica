@@ -1,28 +1,27 @@
 ﻿![](http://www.blog.ulisesgascon.com/wp-content/uploads/2015/05/edubasica01.jpg)
-
-# EDUBASICA Shield con Nodejs
-## Controlar Edubasica con javascript usando Nodejs y Johnny-five
+# EduBasica Shield con Nodejs
+** Controlar Edubasica con javascript usando Nodejs y Johnny-five**
 
 La idea es usar javascript para controlar EduBasica shield y Arduino. Opcionalmente se pueden adaptar los scripts sino se tiene una placa EduBasica.
 
-_**Note:** English version is here (under development at the momment)._
+_**Note:** English version is [here](https://github.com/UlisesGascon/edubasica/tree/master/Nodejs/translations) (under development at the momment)._
 
-## Introducción e instalacion
+## Introducción e instalación
 ** EduBasica, nodejs y Johnny-five **
 
 
 ### Introducción
 
-**Eduasica** 
+**EduBasica** 
 
 > EduBasica es una tarjeta multipropósito con componentes electrónicos incluidos 
 > que puedes usar para fabricar un robot, controlar un sistema de poleas, activar barreras, 
 > comunicar dispositivos bluetooth, y todo lo que te puedas imaginar para realizar cientos de prácticas.
 
-[Sitio oficial](http://practicasconarduino.com)
-[Esquemas y circuitos](https://github.com/jorgeroden/edubasica)
-[Libro de ejercicios](http://www.practicasconarduino.com/libro/)
-[FAQ](http://www.practicasconarduino.com/faq/)
+- [Sitio oficial](http://practicasconarduino.com)
+- [Esquemas y circuitos](https://github.com/jorgeroden/edubasica)
+- [Libro de ejercicios](http://www.practicasconarduino.com/libro/)
+- [FAQ](http://www.practicasconarduino.com/faq/)
 
 
 **Nodejs**
@@ -31,11 +30,11 @@ _**Note:** English version is here (under development at the momment)._
 > en el lenguaje de programación ECMAScript, asíncrono, con I/O de datos en una arquitectura orientada 
 > a eventos y basado en el motor V8 de Google.
 
-[Documentación](https://nodejs.org/documentation/) 
-[Nodeschool/](http://nodeschool.io/)
-[API](https://nodejs.org/api/)
-[Introducción a NodeJS a traves de Koans](http://nodejskoans.com/)
-[Meetup - Nodejs Madrid](http://www.meetup.com/es/Node-js-Madrid/) 
+- [Documentación](https://nodejs.org/documentation/) 
+- [Nodeschool/](http://nodeschool.io/)
+- [API](https://nodejs.org/api/)
+- [Introducción a NodeJS a traves de Koans](http://nodejskoans.com/)
+- [Meetup - Nodejs Madrid](http://www.meetup.com/es/Node-js-Madrid/) 
 
 **Johnny-Five**
 
@@ -44,11 +43,11 @@ _**Note:** English version is here (under development at the momment)._
 > Beagle Bone, Intel Galileo & Edison, Linino One, Pinoccio, pcDuino3, Raspberry Pi, Spark Core, TI 
 > Launchpad and more!
 
-[Noticias](http://johnny-five.io/news/)
-[API](http://johnny-five.io/api/)
-[Ejemplos](http://johnny-five.io/examples/)
-[Blog/Aticulos](http://johnny-five.io/articles/)
-[Plataformas soportadas](http://johnny-five.io/platform-support/)
+- [Noticias](http://johnny-five.io/news/)
+- [API](http://johnny-five.io/api/)
+- [Ejemplos](http://johnny-five.io/examples/)
+- [Blog/Aticulos](http://johnny-five.io/articles/)
+- [Plataformas soportadas](http://johnny-five.io/platform-support/)
 
 
 ### Instalación
@@ -67,7 +66,7 @@ Instalamos J5.
 
 ## EduBasica.js
 
-Este script es la base para desarrollar un proyecto con EduBasica, todas las variables del esquema electronico estan definidas. 
+Este script es la base para desarrollar un proyecto con EduBasica, todas las variables del esquema electrónico estan definidas. 
 
 ** EduBasica PinOut **
 
@@ -125,23 +124,24 @@ board.on("ready", function() {
 
 ## Test.js
 
-test.js nos permite hacer un test de toda la placa por completo o de funciones especificas. La manera de funcionar es a traves de la consola de Nodejs.
+*test.js* nos permite hacer un test de toda la placa por completo o de funciones especificas. La manera de funcionar es a traves de la *consola de Nodejs*.
 
 En primer lugar debemos ejecutar el script.
 
 	node test.js (argumento)
 
-El argumento es opcional, al ejecutar el script sin argumento o con un argumento no valido por defecto se ejecuta la funcion fullTest que incluye potenciometro, ldr, pulsador, motores y servo.
+El argumento es opcional, al ejecutar el script sin argumento o con un argumento no valido por defecto se ejecuta la *función fullTest* que incluye *potenciometro, ldr, pulsador, motores y servo*.
 
-Se puede definir que parte testear gracias a los argumentos, solo es necesario incluirlo durante la ejecución. Por ejemplo
+Se puede definir que parte testear gracias a los argumentos, solo es necesario incluirlo durante la ejecución. 
+*Por ejemplo:*
 
 	node test.js potenciometroLeds
 
-En este ejemplo node ejecutaria la función potenciometroLeds, que enciende y apaga los leds en función del valor en el potenciometro.
+En este ejemplo node ejecutaria la *función potenciometroLeds*, que enciende y apaga los leds en función del valor en el potenciometro.
 
-Nota: Todos los scripts relacionados con motores y servos requieren de hardware adiccional (motores y servos), aun sin ellos se pueden ejecutar los scripts.
+*Nota: Todos los scripts relacionados con motores y servos requieren de hardware adiccional (motores y servos), aun sin ellos se pueden ejecutar los scripts.*
 
-Importante: El interruptor junto al led VIN, activa y desactiva la corriente hacia los motores y el servo. Por favor, verifica que este apagado o encendido para las prácticas que los incluyen.
+*Importante: El interruptor junto al led VIN, activa y desactiva la corriente hacia los motores y el servo. Por favor, verifica que este apagado o encendido para las prácticas que los incluyen.*
 
 
 ** Tabla de Argumentos, funciones y comportamiento **

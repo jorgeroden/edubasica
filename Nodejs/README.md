@@ -17,7 +17,7 @@ _**Note:** English version is [here](https://github.com/UlisesGascon/edubasica/t
 > EduBasica es una tarjeta multipropósito con componentes electrónicos incluidos 
 > que puedes usar para fabricar un robot, controlar un sistema de poleas, activar barreras, 
 > comunicar dispositivos bluetooth, y todo lo que te puedas imaginar para realizar cientos de prácticas.
-> ***[practicasconarduino](http://practicasconarduino.com)***
+> *[practicasconarduino](http://practicasconarduino.com)*
 
 - [Sitio oficial](http://practicasconarduino.com)
 - [Esquemas y circuitos](https://github.com/jorgeroden/edubasica)
@@ -30,7 +30,7 @@ _**Note:** English version is [here](https://github.com/UlisesGascon/edubasica/t
 > Node.js es un entorno de programación en la capa del servidor (pero no limitándose a ello) basado 
 > en el lenguaje de programación ECMAScript, asíncrono, con I/O de datos en una arquitectura orientada 
 > a eventos y basado en el motor V8 de Google.
-> ***[Wikepedia](https://es.wikipedia.org)***
+> *[Wikepedia](https://es.wikipedia.org)*
 
 - [Documentación](https://nodejs.org/documentation/) 
 - [Nodeschool](http://nodeschool.io/)
@@ -44,7 +44,7 @@ _**Note:** English version is [here](https://github.com/UlisesGascon/edubasica/t
 > developed at Bocoup. Johnny-Five programs can be written for Arduino (all models), Electric Imp, 
 > Beagle Bone, Intel Galileo & Edison, Linino One, Pinoccio, pcDuino3, Raspberry Pi, Spark Core, TI 
 > Launchpad and more!
-> ***[Johnny-five en Github](https://github.com/rwaldron/johnny-five)***
+> *[Johnny-five en Github](https://github.com/rwaldron/johnny-five)*
 
 - [Noticias](http://johnny-five.io/news/)
 - [API](http://johnny-five.io/api/)

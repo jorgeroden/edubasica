@@ -142,6 +142,9 @@ Se puede definir que parte testear gracias a los argumentos, solo es necesario i
 
 En este ejemplo node ejecutaría la *función potenciometroLeds*, que enciende y apaga los leds en función del valor en el potenciómetro.
 
+Se puede consultar ayuda adiccional con el argumento *ayuda:*
+	node test.js ayuda
+
 *Nota: Todos los scripts relacionados con motores y servos requieren de hardware adicional (motores y servos), aun sin ellos se pueden ejecutar los scripts.*
 
 *Importante: El interruptor junto al led VIN, activa y desactiva la corriente hacia los motores y el servo. Por favor, verifica que este apagado o encendido para las prácticas que los incluyen.*
@@ -176,4 +179,4 @@ En este ejemplo node ejecutaría la *función potenciometroLeds*, que enciende y
 | pulsador | pulsadorBasico(); | Solo lectura del pulsador |
 | pulsadorLeds | pulsadorLeds(); | Lectura e interacción con Leds |
 
-***Imágenes de [practicasconarduino](http://practicasconarduino.com)***
+*Imágenes de [practicasconarduino](http://practicasconarduino.com)*

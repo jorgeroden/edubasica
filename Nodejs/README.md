@@ -1,13 +1,13 @@
 ﻿![](http://www.blog.ulisesgascon.com/wp-content/uploads/2015/05/edubasica01.jpg)
 # EduBasica Shield con Nodejs
-** Controlar Edubasica con javascript usando Nodejs y Johnny-five**
+**Controlar Edubasica con javascript usando Nodejs y Johnny-five**
 
 La idea es usar javascript para controlar EduBasica shield y Arduino. Opcionalmente se pueden adaptar los scripts sino se tiene una placa EduBasica.
 
 _**Note:** English version is [here](https://github.com/UlisesGascon/edubasica/tree/master/Nodejs/translations) (under development at the momment)._
 
 ## Introducción e instalación
-** EduBasica, nodejs y Johnny-five **
+**EduBasica, nodejs y Johnny-five**
 
 
 ### Introducción
@@ -31,7 +31,7 @@ _**Note:** English version is [here](https://github.com/UlisesGascon/edubasica/t
 > a eventos y basado en el motor V8 de Google.
 
 - [Documentación](https://nodejs.org/documentation/) 
-- [Nodeschool/](http://nodeschool.io/)
+- [Nodeschool](http://nodeschool.io/)
 - [API](https://nodejs.org/api/)
 - [Introducción a NodeJS a traves de Koans](http://nodejskoans.com/)
 - [Meetup - Nodejs Madrid](http://www.meetup.com/es/Node-js-Madrid/) 
@@ -64,15 +64,15 @@ Instalamos J5.
 
 
 
-## EduBasica.js
+## edubasica.js
 
 Este script es la base para desarrollar un proyecto con EduBasica, todas las variables del esquema electrónico estan definidas. 
 
-** EduBasica PinOut **
+**EduBasica PinOut**
 
 ![](http://www.blog.ulisesgascon.com/wp-content/uploads/2015/05/edubasica_v2_pinout.jpg)
 
-** EduBasica PinOut con J5 **
+**EduBasica PinOut con J5**
 
 ```javascript
 /* INICIAR JOHNNY-FIVE */
@@ -122,7 +122,7 @@ board.on("ready", function() {
 });
 ```
 
-## Test.js
+## test.js
 
 *test.js* nos permite hacer un test de toda la placa por completo o de funciones especificas. La manera de funcionar es a traves de la *consola de Nodejs*.
 
@@ -144,31 +144,31 @@ En este ejemplo node ejecutaria la *función potenciometroLeds*, que enciende y 
 *Importante: El interruptor junto al led VIN, activa y desactiva la corriente hacia los motores y el servo. Por favor, verifica que este apagado o encendido para las prácticas que los incluyen.*
 
 
-** Tabla de Argumentos, funciones y comportamiento **
+**Tabla de Argumentos, funciones y comportamiento**
 
 | Argumento | Función | Comportamiento |
 | --- | --- | --- |
 | (vacio) | fullTest (); | Test completo (pulsador, potenciometro, motores, servo...)  | 
-| encenderLeds | encenderLeds(); | Encender todos los leds. |
-| parpadearLeds | parpadearLeds(); | Parpadear todos los leds. |
-| encenderLed1 | encenderLed1(); | Lorem |
-| encenderLedVerde | encenderLedVerde(); | Encender el Led1 (Verde). |
-| encenderLed2 | encenderLed2(); | Lorem |
-| encenderLedNaranja | encenderLedNaranja(); | Encender el Led2 (Naranja). |
-| encenderLed3 | encenderLed3(); | Lorem |
-| encenderLedRojo | encenderLedRojo(); | Encender el Led3 (Rojo). |
-| potenciometro | potenciometroBasico(); | Solo lectura |
-| potenciometroLeds | potenciometroLeds(); | Lectura + Leds |
-| ldrBasico | ldrBasico(); | Solo lectura | 
+| encenderLeds | encenderLeds(); | Encender todos los leds |
+| parpadearLeds | parpadearLeds(); | Parpadear todos los leds |
+| encenderLed1 | encenderLed1(); | Encender el Led1 (Verde) |
+| encenderLedVerde | encenderLedVerde(); | Encender el Led1 (Verde) |
+| encenderLed2 | encenderLed2(); | Encender el Led2 (Naranja) |
+| encenderLedNaranja | encenderLedNaranja(); | Encender el Led2 (Naranja) |
+| encenderLed3 | encenderLed3(); | Encender el Led3 (Rojo) |
+| encenderLedRojo | encenderLedRojo(); | Encender el Led3 (Rojo) |
+| potenciometro | potenciometroBasico(); | Solo lectura del potenciómetro |
+| potenciometroLeds | potenciometroLeds(); | Lectura e interacción con Leds |
+| ldr | ldrBasico(); | Solo lectura del ldr | 
 | servo | servoBasico(); | Loop 180º sin parar |
-| motores | motoresBasico(); | Motores avance / 5' retroceso / 10' parada |
-| motoresAvance | motoresAvance(); | Motores avance non-stop |
-| motoresReversa | motoresReversa(); | Motores reversa non-stop |
-| motorA | motorABasico(); | MotorA avance / 5' retroceso / 10' parada |
-| motorAAvance | motorAAvance(); | MotorA avance non-stop |
-| motorAReversa | motorAReversa(); | MotorA reversa non-stop |
-| motorB | motorBBasico(); | MotorB avance / 5' retroceso / 10' parada |
-| motorBAvance | motorBAvance(); | MotorB avance non-stop |
-| motorBReversa | motorBReversa(); | MotorB reversa non-stop |
-| pulsador | pulsadorBasico(); | Pulsador lectura |
-| pulsadorLeds | pulsadorLeds(); | Pulsador lectura + Leds |
+| motores | motoresBasico(); | Motores avance -> 5" retroceso -> 10" parada |
+| motoresAvance | motoresAvance(); | Motores avance sinfín |
+| motoresReversa | motoresReversa(); | Motores reversa sinfín |
+| motorA | motorABasico(); | MotorA avance -> 5" retroceso -> 10" parada |
+| motorAAvance | motorAAvance(); | MotorA avance sinfín |
+| motorAReversa | motorAReversa(); | MotorA reversa sinfín |
+| motorB | motorBBasico(); | MotorB avance -> 5" retroceso -> 10" parada |
+| motorBAvance | motorBAvance(); | MotorB avance sinfín |
+| motorBReversa | motorBReversa(); | MotorB reversa sinfín |
+| pulsador | pulsadorBasico(); | Solo lectura del pulsador |
+| pulsadorLeds | pulsadorLeds(); | Lectura e interacción con Leds |

@@ -143,6 +143,7 @@ Se puede definir que parte testear gracias a los argumentos, solo es necesario i
 En este ejemplo node ejecutaría la *función potenciometroLeds*, que enciende y apaga los leds en función del valor en el potenciómetro.
 
 Se puede consultar ayuda adiccional con el argumento *ayuda:*
+
 	node test.js ayuda
 
 *Nota: Todos los scripts relacionados con motores y servos requieren de hardware adicional (motores y servos), aun sin ellos se pueden ejecutar los scripts.*

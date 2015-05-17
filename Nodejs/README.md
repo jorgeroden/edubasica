@@ -4,6 +4,8 @@
 
 La idea es usar javascript para controlar EduBasica shield y Arduino. Opcionalmente se pueden adaptar los scripts sino se tiene una placa EduBasica.
 
+Podéis consultar más detalles sobre este repositorio en mi [blog](http://goo.gl/PWNx4M).
+
 _**Note:** English version is [here](https://github.com/UlisesGascon/edubasica/tree/master/Nodejs/translations) (under development at the momment)._
 
 ## Introducción e instalación
